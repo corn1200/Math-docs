@@ -315,3 +315,45 @@ Direct3D와 Unity3D는 왼손좌표계를 사용한다.
 오른주먹을 말아쥐고 엄지를 들었을 때 엄지방향이 회전축 방향, 말아쥔 손가락 방향이 회전방향임을 알 수 있다.
 
 ![좌표계](/img/coordinate1.png)
+
+# 3. 피타고라스 정리
+
+![피타고라스](/img/pytha0.svg)      
+$a^2 + b^2 = c^2$   
+직각삼각형에서 빗변의 길이의 제곱은 나머지 두 변의 길이를 제곱한 뒤 더한 것과 같다.
+
+직각삼각형의 세 변의 길이를 각각 a, b, c 라 하고 변 a, b 사이 각도가 직각을 이룰 때, 즉 변 c가 빗변일때 $a^2 + b^2 = c^2$가 성립함을 뜻한다.
+
+### 유클리드의 증명법
+
+![피타고라스](/img/pytha1.gif)
+
+위의 그림과 같이 $\angle C = 90^\circ$인 직각삼각형 ABC 에 대하여 세 변의 길이를 각각 한 변의 길이로 하는 정사각형 ADEB, ACHI, BFGC를 그린다.   
+점 C에서 변 AB에 내린 수선의 발을 M, 그 연장선과 변 BE와 만나는 점을 N이라고 하자.      
+이 때   
+1. $\Box ACHI = 2 \triangle ACI$   
+
+또, 밑변의 길이와 높이가 각각 같으므로,     
+
+2. $\triangle ACI = \triangle ABI$
+
+두 변의 길이와 그 끼인각의 크기가 각각 같으므로,    
+
+3. $\triangle ABI \equiv \triangle ADC$    
+
+밑변의 길이와 높이가 각각 같으므로,     
+
+4. $\triangle ADC = \triangle ADM$     
+5. $\Box ADNM = 2 \triangle ADM$   
+
+(1), (2), (3), (4), (5)에서     
+
+6. $\Box ACHI = \Box ADNM$  
+
+같은 방법으로
+
+7. $\Box ACHI = \Box ADNM$
+
+(6), (7)에서    
+$\Box ADEB = \Box ACHI + \Box BFGC$     
+$\therefore \overline{AB}^2 = \overline{BC}^2 + \overline{BC}^2$
