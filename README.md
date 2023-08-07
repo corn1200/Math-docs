@@ -329,7 +329,7 @@ $a^2 + b^2 = c^2$
 ![피타고라스](/img/pytha1.gif)
 
 위의 그림과 같이 $\angle C = 90^\circ$인 직각삼각형 ABC 에 대하여 세 변의 길이를 각각 한 변의 길이로 하는 정사각형 ADEB, ACHI, BFGC를 그린다.   
-점 C에서 변 AB에 내린 수선의 발을 M, 그 연장선과 변 BE와 만나는 점을 N이라고 하자.      
+점 C에서 변 AB에 내린 수선의 발을 M, 그 연장선과 변 DE와 만나는 점을 N이라고 하자.      
 이 때   
 1. $\Box ACHI = 2 \triangle ACI$   
 
@@ -357,3 +357,21 @@ $a^2 + b^2 = c^2$
 (6), (7)에서    
 $\Box ADEB = \Box ACHI + \Box BFGC$     
 $\therefore \overline{AB}^2 = \overline{BC}^2 + \overline{BC}^2$
+
+### 바스카라의 증명법
+
+![피타고라스](/img/pytha2.png)
+
+정사각형 ABCD를 기준으로, 대각선이 c가 되는 직각 삼각형을 그린다.   
+
+그러면 삼각형 ABE와 같은 모양이 된다.   
+그리고, 각 모서리를 기준으로 돌려가면서 배치하면, 가운데 정사각형 EFGH를 남겨놓는 모양이 된다.
+
+넓이를 비교하면,
+- S1 = 전체 정사각형(ABCD)의 넓이 = $c \times c = c^2$
+- S2 = 부분 도형들의 넓이의 함 = $\triangle ABE + \triangle BCF + \triangle GCD + \triangle AHD + \Box EFGH = 4 \times \frac{1}{2} \times a \times b + (b - a)^2$
+
+S1 = S2 이므로,     
+$c^2 = 2ab + b^2 - 2ab + a^2$   
+$c^2 = a^2 + b^2$   
+$a^2 + b^2 = c^2$
