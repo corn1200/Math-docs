@@ -375,3 +375,24 @@ S1 = S2 이므로,
 $c^2 = 2ab + b^2 - 2ab + a^2$   
 $c^2 = a^2 + b^2$   
 $a^2 + b^2 = c^2$
+
+# 4. 삼각비
+
+직각삼각형의 세 변의 길이 중 두 변의 길이간의 비례 관계를 나타내는 값이다.  
+일반적으로 비례 관계는 분수로 나타낸다.     
+또한 $\sin$과 $\cos$은 반비례한다.  
+
+항상 빗변의 길이를 나눠야 될 물리량으로 생각하면 직관적으로 적용할 수 있다.     
+밑변의 길이에서 나누면 코사인(cosine), 높이에서 나누면 사인(sine)이라고 한다.
+
+![삼각비](/img/triratios0.webp)
+
+엄밀하게는 직각삼각형에 대해 sine, cosine, tangent를 다음과 같이 정의한다.  
+$$\sin A = \frac{a}{h}$$
+$$\cos A = \frac{b}{h}$$
+$$\tan A = \frac{a}{b}$$
+
+그리고 이들을 역수로서 cosecant, secant, cotangent 함수를 다음과 같이 정의한다.
+$$\csc A = \frac{1}{\sin A} = \frac{h}{a}$$
+$$\sec A = \frac{1}{\cos A} = \frac{h}{b}$$
+$$\cot A = \frac{1}{\tan A} = \frac{b}{a}$$
