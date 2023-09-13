@@ -2392,3 +2392,41 @@ $e^{i\theta} = \cos(\theta) + i \sin(\theta)$
 특히, 사원수의 허수 부분은 오일러 공식을 사용하여 다음과 같이 정의된다.     
 $bi + cj + dk = \sin(\frac{\theta}{2}) \cdot (u_xi + u_yi + u_zk)$  
 여기서 $u_x, u_y, u_z$는 회전 축의 단위 벡터이고, $\theta$는 회전 각도이다.
+
+# 18.3.2. 회전 사원수를 이용한 3차원 공간에서의 회전
+1. 회전 사원수 생성: 먼저, 원하는 회전을 나타내는 회전 사원수를 생성한다.   
+이때 회전 사원수는 회전의 크기와 방향을 나타낸다.   
+예를 들어, 오일러 각도(roll, pitch, yaw)를 사용하여 회전 사원수를 생성할 수 있다.
+
+```c#
+Quaternion rotation = Quaternion.Euler(30f, 45f, 60f); // 각 축 주위의 회전 각도를 지정
+```
+
+위 코드에서 'Quaternion.Euler' 함수를 사용하여 오일러 각도를 사원수로 변환했다.
+
+2. 게임 오브젝트에 회전 적용:
+```c#
+transform.rotation = rotation;
+```
+
+위 코드에서 'tranform.rotation'은 게임 오브젝트의 현재 회전을 나타낸다.     
+이를 새로 생성한 회전 사원수 'rotation'으로 설정함으로써 해당 게임 오브젝트를 회전시킨다.
+
+3. 시간에 따른 회전: 유니티에서는 주로 프레임마다 또는 시간에 따라 부드러운 회전을 적용하는 경우가 많다.    
+이 경우, 'Quaternion.Lerp' 또는 'Quaternion.Slerp' 함수를 사용하여 시작 회전과 목표 회전 간의 보간을 수행할 수 있다.
+
+```c#
+Quaternion startRotation = transform.rotation;
+Quaternion targetRotation = Quaternion.Euler(90f, 0f, 0f);
+float duration = 2f; // 회전에 걸릴 시간 (초)
+
+float elapsedTime = 0f;
+while (elapsedTime < duration) {
+    transform.rotation = Quaternion.Slerp(startRotation, targetRotation, elapsedTime / duration);
+    elapsedTime += Time.deltaTime;
+    yield return null; // 다음 프레임까지 대기
+}
+```
+
+위 코드에서 'Quaternion.Slerp' 함수를 사용하여 시작 회전과 목표 회전 사이를 부드럽게 보간한다.  
+이것은 시간에 따라 게임 오브젝트를 회전시키는 간단한 예이다.
