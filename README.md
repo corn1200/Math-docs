@@ -1073,16 +1073,17 @@ $A$가 주어지면 입력 벡터를 변환하여 결과 벡터를 예측할 수
 두 행렬의 크기가 같을 때만 덧셈과 뺄셈이 가능하다.  
 예시:   
 $$\begin{bmatrix} 1 & 2 \cr 3 & 4 \end{bmatrix} + \begin{bmatrix} 5 & 6 \\\ 7 & 8 \end{bmatrix} = \begin{bmatrix} 6 & 8 \\\ 10 & 12 \end{bmatrix}$$
-2. 스칼라 곱:   
+$$ \left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack * \left\lbrack \matrix{1 & 0 \cr 0 & 1} \right\rbrack = \left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack $$
+3. 스칼라 곱:   
 행렬과 스칼라(숫자)의 곱은 해당 행렬의 모든 원소에 스칼라를 곱해주는 연산이다.  
 예시:
 $$2 \cdot \begin{bmatrix} 3 & 4 \\ 5 & 6 \end{bmatrix} = \begin{bmatrix} 6 & 8 \\ 10 & 12 \end{bmatrix}$$
-3. 행렬곱 (Matrix Multiplication):
+4. 행렬곱 (Matrix Multiplication):
 두 행렬 $A$와 $B$의 행렬곱 $C = AB$는 $C$의 각 원소를 $A$의 해당 행과 $B$의 해당 열의 내적으로 구한다.  
 행렬곱을 수행하기 위해서는 첫 번째 행렬의 열 수와 두 번째 행렬의 행 수가 일치해야 한다.     
 예시:
 $$\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \cdot \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} = \begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix}$$
-4. 전치행렬 (Transpose Matrix):     
+5. 전치행렬 (Transpose Matrix):     
 행렬의 전치는 행과 열을 바꾸는 연산이다.    
 $A$의 전치는 $A^T$로 나타내며, $A$의 $i$행과 $j$열의 원소가 $A^T$의 $j$행과 $i$열의 원소로 이동한다.    
 예시:
