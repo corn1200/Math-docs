@@ -1095,8 +1095,8 @@ $$
 5 & 6 \\ 
 7 & 8 
 \end{bmatrix} = 
-\begin{bmatrix} 6 & 8 
-\\ 10 & 12 
+\begin{bmatrix} 6 & 8 \\ 
+10 & 12 
 \end{bmatrix}
 $$
 
