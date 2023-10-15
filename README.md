@@ -1074,7 +1074,9 @@ $A$가 주어지면 입력 벡터를 변환하여 결과 벡터를 예측할 수
 행렬 간의 덧셈과 뺄셈은 각 원소별로 동일한 위치에 있는 원소들끼리 더하거나 뺄 때 이루어진다.    
 두 행렬의 크기가 같을 때만 덧셈과 뺄셈이 가능하다.  
 예시:   
-$$\begin{bmatrix} 1 & 2 \cr 3 & 4 \end{bmatrix} + \begin{bmatrix} 5 & 6 \\\ 7 & 8 \end{bmatrix} = \begin{bmatrix} 6 & 8 \\\ 10 & 12 \end{bmatrix}$$
+```math
+\begin{bmatrix} 1 & 2 \cr 3 & 4 \end{bmatrix} + \begin{bmatrix} 5 & 6 \\\ 7 & 8 \end{bmatrix} = \begin{bmatrix} 6 & 8 \\\ 10 & 12 \end{bmatrix}
+```
 
 $$ {\left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack} * \left\lbrack \matrix{1 & 0 \cr 0 & 1} \right\rbrack = \left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack $$
 3. 스칼라 곱:   
