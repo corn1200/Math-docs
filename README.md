@@ -1078,6 +1078,11 @@ $A$가 주어지면 입력 벡터를 변환하여 결과 벡터를 예측할 수
 \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} + \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} = \begin{bmatrix} 6 & 8 \\ 10 & 12 \end{bmatrix}
 ```
 
+$\begin{pmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{pmatrix}$
+
 $$ {\left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack} * \left\lbrack \matrix{1 & 0 \cr 0 & 1} \right\rbrack = \left\lbrack \matrix{2 & 3 \cr 4 & 5} \right\rbrack $$
 3. 스칼라 곱:   
 행렬과 스칼라(숫자)의 곱은 해당 행렬의 모든 원소에 스칼라를 곱해주는 연산이다.  
