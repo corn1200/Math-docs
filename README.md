@@ -6,6 +6,7 @@ x \\
 y \\
 \end{bmatrix}
 $$
+
 $$B = 
 \begin{bmatrix}
 x & y
