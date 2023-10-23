@@ -2717,3 +2717,31 @@ $Slerp(q_1, q_2, t) = \frac{\sin((1-t)\theta)}{\sin(\theta)}q_1 + \frac{\sin(t\t
     이것은 각 프레임에서 캐릭터의 변환 정보를 저장하고 중간 프레임에서 보간(Interpolate)하여 부드러운 움직임을 만든다.
     - 스켈레탈 애니메이션(Skeletal Animation): 스켈레탈 애니메이션은 스켈레톤 메시의 뼈대를 사용하여 캐릭터를 움직인다.     
     각 뼈에 대한 변환 정보(포즈)를 키프레임 방식으로 저장하고, 이러한 포즈를 선형 보간하여 캐릭터의 동작을 생성한다.
+
+
+
+$$(A \cdot B)^{T} = 
+\begin{bmatrix}
+ae + bg & af + bh \\
+ce + dg & cf + dh \\
+\end{bmatrix}^{T} =
+\begin{bmatrix}
+ae + bg & ce + dg \\
+af + bh & cf + dh \\
+\end{bmatrix}
+$$
+$$B^T \cdot A^T = 
+\begin{bmatrix}
+e & g \\
+f & h \\
+\end{bmatrix} \cdot
+\begin{bmatrix}
+a & c \\
+b & d \\
+\end{bmatrix} =
+\begin{bmatrix}
+ea + gh & ec + gd \\
+fa + hb & fc + hd \\
+\end{bmatrix}
+$$
+$$\therefore (A \cdot B)^T = B^T \cdot A^T$$
