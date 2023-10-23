@@ -1,9 +1,14 @@
 # Math-docs
 
+$$A = 
+\begin{bmatrix} 
+x \\
+y \\
+\end{bmatrix}
 $$
+$$B = 
 \begin{bmatrix}
-a & b & c \\
-d & e & f \\
+x & y
 \end{bmatrix}
 $$
 
