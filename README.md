@@ -1,24 +1,38 @@
 # Math-docs
 
-$$A = 
-\begin{bmatrix} 
-x \\
-y \\
-\end{bmatrix}
-$$
 
-$$B = 
+$$
+\begin{matrix}
+A \cdot (B \cdot C) &=& 
 \begin{bmatrix}
-x & y
+a & b \\
+c & d \\
+\end{bmatrix} \cdot
+(
+    \begin{bmatrix}
+    e & f \\
+    g & h \\
+    \end{bmatrix} \cdot
+    \begin{bmatrix}
+    i & j \\
+    k & l \\
+    \end{bmatrix}
+) \\
+&=&
+\begin{bmatrix}
+a & b \\
+c & d \\
+\end{bmatrix} \cdot
+\begin{bmatrix}
+ei + fk & ej + fl \\
+gi + hk & gj + hl \\
+\end{bmatrix} \\
+&=&
+\begin{bmatrix}
+aei + afk + bgi + bhk & aej + afl + bgj + bhl \\
+cei + cfk + dgi + dhk & cej + cfl + dgj + dhl \\
 \end{bmatrix}
-$$
-
-$$
-\begin{bmatrix} 
-a_{11} & a_{12} & a_{13}  \\
-a_{21} & a_{22} & a_{23}  \\
-a_{31} & a_{32} & a_{33}  \\
-\end{bmatrix}
+\end{matrix}
 $$
 
 # 목차
