@@ -1,6 +1,13 @@
 # Math-docs
 
 $$
+\begin{matrix}
+f(\vec{v_1} + \vec{v_2}) & = & f(x_1 + X_2, y_1 + y_2) \\
+& = & (a(x_1 + x_2) + b(y_1 + y_2), c(x_1 + x_2) + d(y_1 + y_2))
+\end{matrix}
+$$
+
+$$
 \begin{bmatrix} 
 a_{11} & a_{12} & a_{13}  \\
 a_{21} & a_{22} & a_{23}  \\
